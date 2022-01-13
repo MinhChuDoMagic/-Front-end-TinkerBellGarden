@@ -10,6 +10,9 @@ import Event from "./components/customer/event/event.component";
 import addEvent from './components/staff/addEvent.component';
 import Home from './components/customer/home/Home';
 import Profile from './components/customer/profile/Profile';
+import stallTicket from './components/employee/nvquay/stallTicket';
+import reception from './components/employee/receptionist/reception';
+import ticketBooking from './components/customer/ticketBooking/ticketBooking';
 
 function App() {
   return (<Router>
@@ -22,6 +25,9 @@ function App() {
               <Route path="/event1" component={Event} /> 
               <Route path="/addEvent" component={addEvent} /> 
               <Route path="/profile" component={Profile} /> 
+              <Route path="/stallTicket" component={stallTicket} />
+              <Route path="/reception" component={reception}/>
+              <Route path="/ticketBooking" component={ticketBooking}/>
           </Switch>
     </div></Router>
   );
