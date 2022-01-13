@@ -73,7 +73,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='logout'>
-                <button>Đăng xuất</button>
+                <button>Thoát</button>
             </div>  
         </div>
     )
