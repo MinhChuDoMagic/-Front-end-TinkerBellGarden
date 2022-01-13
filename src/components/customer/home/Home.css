@@ -35,9 +35,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(253, 252, 252,0.3);
+    background-color: rgba(232, 246, 247, 0.9);
     border-radius: 20px;
-    box-shadow: 5px 5px 0px black;
+    box-shadow: 0px 14px 80px rgb(34 35 58 / 20%);
 }
 .home_container .news_event .news p{
     margin-top: 10px;
@@ -58,7 +58,7 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    height: 60%;
+    height: 50%;
 }
 .home_container .news_event .news .part .tt a{
     text-decoration: none;
@@ -70,5 +70,6 @@
 }
 .home_container .news_event .news .part .time{
     margin-left: 10px;
-    height: 30%;
+    margin-bottom: 5%;
+    height: 25%;
 }
