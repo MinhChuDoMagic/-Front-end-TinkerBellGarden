@@ -1,0 +1,74 @@
+.home_container {
+    margin-top: 0px;
+    background-image: url('onlday.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+  
+.home_container .content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+.home_container .content p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+.home_container .news_event{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.home_container .news_event .news{
+    display: flex;
+    height: 90%;
+    width: 48%;  
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(253, 252, 252,0.3);
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px black;
+}
+.home_container .news_event .news p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 19px;
+    height: 9%;
+}
+.home_container .news_event .news .part{
+    height: 25%;
+    width: 90%;
+    padding: 5px;
+    border-radius:10px ;
+    background-color: rgba(243, 166, 166, 0.5);
+
+}
+.home_container .news_event .news .part .tt{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 60%;
+}
+.home_container .news_event .news .part .tt a{
+    text-decoration: none;
+    color: #262626;
+    overflow: hidden;
+}
+.home_container .news_event .news .part .tt a:hover{
+    text-decoration:underline;
+}
+.home_container .news_event .news .part .time{
+    margin-left: 10px;
+    height: 30%;
+}
