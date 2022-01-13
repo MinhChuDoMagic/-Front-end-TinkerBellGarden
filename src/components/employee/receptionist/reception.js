@@ -8,7 +8,7 @@ function Reception() {
      
     return <div>
       <input></input>
-      <Button>OK</Button>
+      <Button></Button>
 
     </div>
   }
