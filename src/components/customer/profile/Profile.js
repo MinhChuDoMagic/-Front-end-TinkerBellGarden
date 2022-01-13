@@ -25,19 +25,19 @@ export default function Profile() {
                     </div>
                     <div className='line'>
                     <div className='label'>
-                        <p>Họ:</p>
+                        <p>Họ</p>
                     </div>
                     <input value={info.firstName} onChange={e=>{setInfo({...info,firstName: e.target.value});setEdit(true)}}/>
                     </div>
                     <div className='line'>
                     <div className='label'>
-                        <p>Tên:</p>
+                        <p>Tên</p>
                     </div>
                     <input value={info.lastName} onChange={e=>{setInfo({...info,lastName: e.target.value});setEdit(true)}}/>
                     </div>
                     <div className='line'>
                     <div className='label'>
-                        <p>Số điện thoại:</p>
+                        <p>Số điện thoại</p>
                     </div>
                     <input value={info.phoneNumber} onChange={e=>{setInfo({...info,phoneNumber: e.target.value});setEdit(true)}}/>
                     </div>

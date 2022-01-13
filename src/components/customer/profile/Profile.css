@@ -74,13 +74,14 @@
 }
 .info_ticket .info .line input{
     width: 50%;
-    height: 25px;
+    height: 30px;
     padding-left: 10px;
     margin-left: 12%;
     margin-top: 5px;
     outline: hidden;
-    border: 0.5px solid black;
+    border: 1px solid #ced4da;
     border-radius: 5px;
+    font-size: 15px;
 }
 .info_ticket .info .line input:focus{
     outline: none;
