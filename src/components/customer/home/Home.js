@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Home.css'
-import {Carousel} from 'react-bootstrap'
+import {Carousel,Row,Card,Button} from 'react-bootstrap'
 
 export default class Home extends Component {
     render() {
@@ -12,7 +12,7 @@ export default class Home extends Component {
                 <Carousel.Item>
                     <div className='slider sl1'>
                     </div>
-                    <Carousel.Caption>
+                    <Carousel.Caption className='welcome'>
                         <h3>Chào mừng đến TinkerBellGarden</h3>
                         <p>Mở cửa vào tất cả các ngày trong tuần</p>
                     </Carousel.Caption>
@@ -27,6 +27,44 @@ export default class Home extends Component {
                 </Carousel.Item>
             </Carousel>
             </div>
+            <Row>
+                <Card className='ev'>
+                    <div className='img'>
+                        <Card.Img variant="top" src="" />
+                    </div>                  
+                        <Card.Body>
+                            <Card.Title>Sự kiện 1</Card.Title>
+                                <Card.Text>
+                                    mô tả
+                                </Card.Text>
+                            <Button variant="primary">Đặt vé</Button>
+                        </Card.Body>
+                </Card>
+                <Card className='ev'>
+                    <div className='img'>
+                        <Card.Img variant="top" src="" />
+                    </div>                  
+                        <Card.Body>
+                            <Card.Title>Sự kiện 1</Card.Title>
+                                <Card.Text>
+                                    mô tả
+                                </Card.Text>
+                            <Button variant="primary">Đặt vé</Button>
+                        </Card.Body>
+                </Card>
+                <Card className='ev'>
+                    <div className='img'>
+                        <Card.Img variant="top" src="" />
+                    </div>                  
+                        <Card.Body>
+                            <Card.Title>Sự kiện 1</Card.Title>
+                                <Card.Text>
+                                    mô tả
+                                </Card.Text>
+                            <Button variant="primary">Đặt vé</Button>
+                        </Card.Body>
+                </Card>
+            </Row>
             <div className="home_container">  
                 <div className="news_event">
                     <div className="news">
@@ -63,42 +101,7 @@ export default class Home extends Component {
                                 </div>                              
                             </div>
                         </div>
-                    </div>
-                    <div className="news">
-                        <p className='head'>Sự kiện mới</p> 
-                        <div className='items'>
-                            <div className='item'>
-                                <div className='date'>
-                                    <p className='month'>Tháng 9</p>
-                                    <p className='day'>15</p>
-                                </div>
-                                <div className='ct'>
-                                    <div className='tt'><a href="##">sự kiện 1</a></div>
-                                    <div className='time'>15/9/2022</div>                                    
-                                </div>                                
-                            </div>        
-                            <div className='item'>
-                                <div className='date'>
-                                    <p className='month'>Tháng 9</p>
-                                    <p className='day'>15</p>
-                                </div>
-                                <div className='ct'>
-                                    <div className='tt'><a href="##">sự kiện 2</a></div>
-                                    <div className='time'>15/9/2022</div>                                    
-                                </div>                                
-                            </div>   
-                            <div className='item'>
-                                <div className='date'>
-                                    <p className='month'>Tháng 9</p>
-                                    <p className='day'>15</p>
-                                </div>
-                                <div className='ct'>
-                                    <div className='tt'><a href="##">sự kiện 3</a></div>
-                                    <div className='time'>15/9/2022</div>                                    
-                                </div>                                
-                            </div>                    
-                        </div>
-                    </div>
+                    </div>                                       
                 </div>
             </div>
             </div>
