@@ -14,6 +14,7 @@ import stallTicket from './components/employee/nvquay/stallTicket';
 import reception from './components/employee/receptionist/reception';
 import ticketBooking from './components/customer/ticketBooking/ticketBooking';
 import userHome from './components/customer/userHome/Home';
+import eventList from './components/customer/eventList/eventList';
 
 function App() {
   return (<Router>
@@ -60,6 +61,7 @@ function App() {
             <Route path="/userHome" component={userHome} />
             <Route path="/VIP-register" component={VIPRegister} /> 
             <Route path="/event1" component={Event} /> 
+            <Route path="/eventList" component={eventList} /> 
             <Route path="/ticketBooking" component={ticketBooking}/>
           </Route>
 

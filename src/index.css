@@ -130,3 +130,25 @@ body, html, .App, #root, .outer {
 .forgot-password a {
   color: #167bff;
 }
+
+.eventList .ev {
+  border-radius: 15px;
+  
+}
+
+.eventList{
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+}
+
+.eventList .img {
+  border-radius: 15px 15px 0px 0px;
+
+}
+
+.eventList .av {
+  height: 80vh;
+}
