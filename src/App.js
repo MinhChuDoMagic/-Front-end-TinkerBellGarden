@@ -7,7 +7,7 @@ import Login from "./components/customer/login/login.component";
 import SignUp from "./components/customer/signup/signup.component";
 import VIPRegister from "./components/customer/Vip-register/vipregister.component";
 import Event from "./components/customer/event/event.component";
-import addEvent from './components/staff/addEvent.component';
+import addEvent from './components/staff/addEvent/addEvent.component';
 import Home from './components/customer/home/Home';
 import Profile from './components/customer/profile/Profile';
 import stallTicket from './components/employee/nvquay/stallTicket';
@@ -15,6 +15,7 @@ import reception from './components/employee/receptionist/reception';
 import ticketBooking from './components/customer/ticketBooking/ticketBooking';
 import userHome from './components/customer/userHome/Home';
 import eventList from './components/customer/eventList/eventList';
+import adminSidebar from './components/staff/adminSidebar/adminSidebar';
 
 function App() {
   return (<Router>
@@ -66,9 +67,10 @@ function App() {
           </Route>
 
           <Route>
-            <Route path="/addEvent" component={addEvent} />               
-            <Route path="/stallTicket" component={stallTicket} />
-            <Route path="/reception" component={reception}/>
+            <Route path="/admin/addEvent" component={addEvent} />               
+            <Route path="/admin/stallTicket" component={stallTicket} />
+            <Route path="/admin/reception" component={reception}/>
+            <Route path="/admin/slidbar" component={adminSidebar}/>
           </Route>
 
     </div></Router>
