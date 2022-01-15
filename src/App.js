@@ -10,12 +10,13 @@ import Event from "./components/customer/event/event.component";
 import addEvent from './components/staff/addEvent.component';
 import Home from './components/customer/home/Home';
 import Profile from './components/customer/profile/Profile';
+import Xemdoanhthu from './components/admin/xemdoanhthu/Xemdoanhthu';
 
 function App() {
   return (<Router>
     <div className="App">
           <Switch>
-              <Route exact path='/' component={Home} /> {/*Ô nào làm trang chủ thì thay component trang chủ vào đây */}
+              <Route exact path='/' component={Xemdoanhthu} /> {/*Ô nào làm trang chủ thì thay component trang chủ vào đây */}
               <Route path="/login" component={Login} />
               <Route path="/sign-up" component={SignUp} />
               <Route path="/VIP-register" component={VIPRegister} /> 
