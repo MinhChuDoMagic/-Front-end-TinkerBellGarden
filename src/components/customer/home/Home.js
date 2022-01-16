@@ -1,10 +1,30 @@
-import React, { Component } from 'react'
+import React, { useState,useEffect } from 'react'
 import './Home.css'
 import {Carousel,Row,Card,Button} from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 
-export default class Home extends Component {
-    render() {
-        return (
+export default function Home() {
+    const [login, setLogin] = useState(false)
+
+    let navi=useNavigate();
+    
+    const handleEvent=()=>{
+        if(!login) navi("/login");
+        else alert("move event");
+    }
+    const handleLogout=()=>{
+        localStorage.removeItem("isLogin");
+        setLogin(false);
+        navi("/login");
+    }
+
+    useEffect(() => {
+        let lg=localStorage.getItem("isLogin");
+        if(lg!==null) setLogin(true);
+        else setLogin(false);
+    }, [])
+
+    return (
             <div className='home_ctn'>
             <div className='slider_home'>
             
@@ -37,7 +57,12 @@ export default class Home extends Component {
                                 <Card.Text>
                                     mô tả
                                 </Card.Text>
-                            <Button variant="primary">Đặt vé</Button>
+                            <Button 
+                                variant="primary"
+                                onClick={()=>handleEvent()}
+                            >
+                                Đặt vé
+                            </Button>
                         </Card.Body>
                 </Card>
                 <Card className='ev'>
@@ -104,7 +129,11 @@ export default class Home extends Component {
                     </div>                                       
                 </div>
             </div>
+            <button 
+                onClick={()=>{handleLogout()}}
+            >
+                logout
+            </button>
             </div>
-        )
-    }
+    )
 }
