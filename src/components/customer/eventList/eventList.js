@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Form, Card, Button, Row, Col } from 'react-bootstrap';
+import { Outlet } from 'react-router-dom';
 
-export default class eventList extends Component {
-    render() {
+export default function EventList() {
         return (
             <div className="eventList">
                 <Row md={4} > 
@@ -10,19 +10,17 @@ export default class eventList extends Component {
                     <Card  className='av'>
                         <Card.Img variant="top" src="https://banahills.sunworld.vn/wp-content/uploads/2021/05/Travel-and-Guide-Facebook-Cover-1-1024x577.png" height="200" />
                         <Card.Body >
-                        <Card.Title> Tinker Bell Garden TẠM NGỪNG ĐÓN KHÁCH THAM QUAN TỪ NGÀY...</Card.Title>
-                        <Card.Text>
-                        Để cùng chung tay với thành phố Đà Nẵng trong việc phòng chống dịch bệnh, cũng như trước diễn biến phức tạp của dịch Covid-19...
-                        </Card.Text>
-                        
+                            <Card.Title> Tinker Bell Garden TẠM NGỪNG ĐÓN KHÁCH THAM QUAN TỪ NGÀY...</Card.Title>
+                            <Card.Text>
+                                Để cùng chung tay với thành phố Đà Nẵng trong việc phòng chống dịch bệnh, cũng như trước diễn biến phức tạp của dịch Covid-19...
+                            </Card.Text>
                         </Card.Body>
 
                         <Card.Footer>
                             <p className="seeMore">
-                                <a href="#">Xem thêm</a>
+                                <a href="/user/event/1">Xem thêm</a>
                             </p>
-                        </Card.Footer>
-                       
+                        </Card.Footer>   
                     </Card>
 
                    
@@ -119,9 +117,7 @@ export default class eventList extends Component {
                     <Col></Col>
                     <Col></Col>
                 </Row>
-
-               
+            <Outlet/>
             </div>
-        );
-    }
+        )
 }

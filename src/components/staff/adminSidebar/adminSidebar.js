@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import './dashboard.css'
 
 
-export default class adminSidebar extends Component {
+export default class AdminSidebar extends Component {
     render() {
         return (
             <div className="db">

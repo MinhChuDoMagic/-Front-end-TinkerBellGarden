@@ -2,6 +2,7 @@
 import React, {  useState } from 'react';
 import './Profile.css';
 import image from './nobi.jpg'
+import { useNavigate } from 'react-router-dom';
 
 export default function Profile() {
     const [info, setInfo] = useState({
@@ -13,7 +14,13 @@ export default function Profile() {
         VIPdate: '15/06/2001'
     });
     const [edit, setEdit] = useState(false);
+
+    let navi=useNavigate();
     
+    const logout = ()=>{
+        localStorage.removeItem("isLogin");
+        navi("/user/home");
+    }
     
     return (
         <div className='prof_ctn'>
@@ -73,7 +80,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='logout'>
-                <button>Thoát</button>
+                <button onClick={()=>logout()}>Thoát</button>
             </div>  
         </div>
     )

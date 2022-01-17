@@ -10,12 +10,7 @@ export default function Home() {
     
     const handleEvent=()=>{
         if(!login) navi("/login");
-        else alert("move event");
-    }
-    const handleLogout=()=>{
-        localStorage.removeItem("isLogin");
-        setLogin(false);
-        navi("/login");
+        else navi("/user/event/ad");
     }
 
     useEffect(() => {
@@ -32,7 +27,7 @@ export default function Home() {
                 <Carousel.Item>
                     <div className='slider sl1'>
                     </div>
-                    <Carousel.Caption className='welcome'>
+                    <Carousel.Caption className='welcome' style={{color:"black"}}>
                         <h3>Chào mừng đến TinkerBellGarden</h3>
                         <p>Mở cửa vào tất cả các ngày trong tuần</p>
                     </Carousel.Caption>
@@ -61,7 +56,7 @@ export default function Home() {
                                 variant="primary"
                                 onClick={()=>handleEvent()}
                             >
-                                Đặt vé
+                                Xem thêm
                             </Button>
                         </Card.Body>
                 </Card>
@@ -129,11 +124,6 @@ export default function Home() {
                     </div>                                       
                 </div>
             </div>
-            <button 
-                onClick={()=>{handleLogout()}}
-            >
-                logout
-            </button>
             </div>
     )
 }

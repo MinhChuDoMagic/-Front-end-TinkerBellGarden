@@ -19,17 +19,17 @@ function TicketBooking() {
                         <option>Vé lượt (thời gian chơi 2 giờ)</option>
                     </Form.Control>
                 </Form.Group>
-                <Form.Group>
+                {/* <Form.Group>
                         <Form.Label>Ngày sử dụng</Form.Label>
                         <Form.Control type="date" placeholder="Chọn ngày"/>
-                    </Form.Group>
-                <Form.Group>
+                    </Form.Group> */}
+                {/* <Form.Group>
                     <Form.Label>Sự kiện</Form.Label>
                     <Form.Control as="select">
                         <option value="1">Thường</option>
                         <option value="0.8">Khuyến mãi giảm 20% </option>
                     </Form.Control>
-                </Form.Group>
+                </Form.Group> */}
                 <Form.Group>
                     <Form.Label>Số lượng vé</Form.Label>
                     <Form.Control as="select" defaultValue="1">

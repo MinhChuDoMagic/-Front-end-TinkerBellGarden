@@ -9,9 +9,9 @@ export default function Login() {
     let navi=useNavigate();
 
     const hanleSignin=()=>{
-        if(nbphone==="user"&&password=="1"){
+        if(nbphone==="user"&&password==="1"){
             localStorage.setItem("isLogin","true");
-            navi("/home");
+            navi("/user/home");
         }
     }
 
