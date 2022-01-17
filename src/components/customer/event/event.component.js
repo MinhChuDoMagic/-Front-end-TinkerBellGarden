@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Badge, ButtonToolbar, InputGroup, FormControl, ButtonGroup } from 'react-bootstrap';
+import { Carousel, Badge, ButtonToolbar, ButtonGroup } from 'react-bootstrap';
 
 
 export default function Event() {

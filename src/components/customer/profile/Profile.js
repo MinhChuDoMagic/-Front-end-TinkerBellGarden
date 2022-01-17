@@ -16,6 +16,11 @@ export default function Profile() {
     const [edit, setEdit] = useState(false);
 
     let navi=useNavigate();
+
+    const handleUpdate=()=>{
+        //callapi
+        setEdit(false);
+    }
     
     const logout = ()=>{
         localStorage.removeItem("isLogin");
@@ -55,12 +60,11 @@ export default function Profile() {
                     <input value={info.email} onChange={e=>{setInfo({...info,email: e.target.value});setEdit(true)}}/>
                     </div>
                     <div className={`bt${edit?'':' hide'}`}>
-                        <button type='submit' onClick={()=>{setEdit(false)}}>Cập nhật</button>
+                        <button type='submit' onClick={()=>handleUpdate()}>Cập nhật</button>
                     </div>
-                    <p>Xu: {info.bonus}</p>
                     <div className='vip'>
                         <p>VIP: {info.VIPdate}</p>
-                        <a href="##">Gia hạn</a>
+                        <a href="/user/VIPregister">Gia hạn</a>
                     </div>
                 </div>
                 <div className='ticket'>
@@ -80,7 +84,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='logout'>
-                <button onClick={()=>logout()}>Thoát</button>
+                <button onClick={()=>logout()}>Đăng xuất</button>
             </div>  
         </div>
     )

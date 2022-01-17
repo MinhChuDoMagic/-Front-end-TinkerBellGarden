@@ -35,9 +35,6 @@ export default class VIPRegister extends Component {
                                     </Form.Group>
 
                                     <button type="submit" className="btn btn-dark btn-lg btn-block">Register</button>
-                                    <p className="forgot-password text-right">
-                                        Already registered <a href="#">log in?</a>
-                                    </p>
                                     
                                 </form>
                             </Col>

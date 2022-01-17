@@ -46,7 +46,6 @@ function TicketBooking() {
             <Col>
             <p>Giá tiền dự kiến: {calculatePrice()} vnđ</p>
                 <Button type="submit">Đặt vé</Button>
-                <Button type="reset">Đặt lại</Button>
             </Col>
             </Row>
         </div>

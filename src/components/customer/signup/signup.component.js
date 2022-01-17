@@ -9,8 +9,6 @@ export default function SignUp() {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
 
-    let navi=useNavigate();
-
     const handleRegister=()=>{
         
     }
@@ -78,8 +76,7 @@ export default function SignUp() {
                             Register
                         </button>
                         <p className="forgot-password text-right">
-                            {/* Already registered <a href="/login">log in?</a> */}
-                            <button onClick={()=>navi("/login")}>login</button>
+                                        Already registered <a href="/login">log in?</a>
                         </p>
                 </form>
             </div>
