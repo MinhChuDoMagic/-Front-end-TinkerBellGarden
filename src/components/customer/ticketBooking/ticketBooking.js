@@ -5,7 +5,7 @@ const calculatePrice = () => {
 }
 
 function TicketBooking() {
-    return <div className="outer">
+    return <div className="outer1">
         <div className="inner1">
             <h3>Đặt vé</h3>
             <Row>

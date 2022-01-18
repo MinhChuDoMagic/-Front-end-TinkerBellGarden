@@ -12,13 +12,15 @@ import Login from './components/customer/login/login.component';
 import Home from './components/customer/home/Home';
 import Profile from './components/customer/profile/Profile';
 import AdminSidebar from './components/staff/adminSidebar/adminSidebar';
+import AddEvent from './components/staff/addEvent/addEvent.component';
+import StaffManage from './components/staff/staffManage/staffManage';
 
 
 
 function App() {
   return (
     <div className="App">
-      
+        
         <Routes>
           <Route index element={<User/>} />
           <Route exact path="user/*" element={<User/>}>
@@ -33,6 +35,8 @@ function App() {
 
           <Route path="/login" exact element={<Login/>} />
           <Route  path="/signup" exact element={<SignUp/>} />
+          <Route  path="/admin" exact element={<AdminSidebar/>} />
+          <Route  path="/admin/staffmanage" exact element={<StaffManage/>} />
         </Routes>
     </div>
   );

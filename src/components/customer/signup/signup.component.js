@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom"
 
 export default function SignUp() {
 
-    const [fullname, setFullname] = useState("");
+    const [firstname, setFirstname] = useState("");
+    const [lastname, setLastname] = useState("");
     const [nbphone, setNbphone] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -19,12 +20,22 @@ export default function SignUp() {
                 <form>
                     <h3>Register</h3>
                         <div className="form-group">
-                            <label>Full name</label>
+                            <label>First name</label>
                             <input
                                 type="text" 
                                 className="form-control" 
-                                placeholder="Enter your name" 
-                                onChange={(e)=>setFullname(e.target.value)}
+                                placeholder="Enter your first name" 
+                                onChange={(e)=>setFirstname(e.target.value)}
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <label>Last name</label>
+                            <input
+                                type="text" 
+                                className="form-control" 
+                                placeholder="Enter your last name" 
+                                onChange={(e)=>setLastname(e.target.value)}
                             />
                         </div>
 
