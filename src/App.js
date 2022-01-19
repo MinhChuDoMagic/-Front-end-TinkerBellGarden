@@ -24,14 +24,10 @@ function App() {
         <Routes>
           <Route index element={<User/>} />
           <Route exact path="user/*" element={<User/>}>
-            {/* <Route exact path="" element={<Home/>}></Route>
-            <Route exact path="home" element={<Home/>}></Route>
-            <Route exact path="profile" element={<Profile/>}></Route> */}
           </Route>
-          {/* <Route exact path='/manager' element={<Manager/>} />
-          <Route exact path='/staff' element={<Staff/>} />
+          <Route exact path='/manager/*' element={<Manager/>} />
+          {/* <Route exact path='/staff' element={<Staff/>} />
           <Route exact path='/receptionist' element={<Receptionist/>} /> */}
-          {/* <Route path="/user/home" exact element={<Home/>}></Route> */}
 
           <Route path="/login" exact element={<Login/>} />
           <Route  path="/signup" exact element={<SignUp/>} />
