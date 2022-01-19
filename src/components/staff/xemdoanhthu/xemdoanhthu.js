@@ -122,8 +122,8 @@ export default function Xemdoanhthu() {
             </div>
             <div className={`detail${detail?'':' hidedetail'}`}>
                 <span className="exit" onClick={()=>setDetail(false)}>X</span>
-                <h3>{dataDetail.data.ten}</h3>
-                <h4>Từ {curStartDate} đến {curEndDate}</h4>
+                <h3 className='namedetail'>{dataDetail.data.ten}</h3>
+                <h4 className='timedetail'>Từ {curStartDate} đến {curEndDate}</h4>
                 <Table striped bordered hover variant="dark">
                     <thead>
                         <tr>

@@ -23,8 +23,6 @@ function App() {
 
           <Route path="/login" exact element={<Login/>} />
           <Route  path="/signup" exact element={<SignUp/>} />
-          <Route  path="/admin" exact element={<AdminSidebar/>} />
-          <Route  path="/admin/staffmanage" exact element={<StaffManage/>} />
         </Routes>
     </div>
   );
