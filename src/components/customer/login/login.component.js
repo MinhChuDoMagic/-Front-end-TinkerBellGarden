@@ -3,6 +3,7 @@ import { Form } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+    const [role, setRole] = useState("0")
     const [nbphone, setNbphone] = useState("")
     const [password, setPassword] = useState("")
 
@@ -10,8 +11,24 @@ export default function Login() {
 
     const hanleSignin=()=>{
         if(nbphone==="user"&&password==="1"){
-            localStorage.setItem("isLogin","true");
-            navi("/user/home");
+            if(role==="0"){
+                //api login user
+                localStorage.setItem("isLogin","true");
+                navi("/user/home");
+            }else if(role==="1"){
+                //api login staff
+                localStorage.setItem("isLogin","true");
+                navi("/manager");
+            }else if(role==="2"){
+                //api login staff
+                localStorage.setItem("isLogin","true");
+                navi("/receptionist");
+            }else{
+                //api login staff
+                localStorage.setItem("isLogin","true");
+                navi("/staff");
+            }
+            
         }
     }
 
@@ -40,11 +57,11 @@ export default function Login() {
                 </div>
                 <Form.Group controlId="exampleForm.ControlSelect1">
                     <Form.Label>Vai trò</Form.Label>
-                    <Form.Control as="select">
-                        <option>Khách hàng</option>
-                        <option>Người quản lý</option>
-                        <option>Nhân viên lễ tân</option>
-                        <option>Nhân viên quầy</option>
+                    <Form.Control as="select" onChange={(e)=>setRole(e.target.value)}>
+                        <option value="0">Khách hàng</option>
+                        <option value="1">Người quản lý</option>
+                        <option value="2">Nhân viên lễ tân</option>
+                        <option value="3">Nhân viên quầy</option>
                     </Form.Control>
                 </Form.Group>
 
