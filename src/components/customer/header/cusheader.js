@@ -19,6 +19,7 @@ export default function CustomerHeader() {
   }
 
     return (
+      <div className='header1'>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <Link className="navbar-brand logo" to="/user/home">Tinkerbell Garden</Link>
@@ -63,5 +64,6 @@ export default function CustomerHeader() {
            </div>
          </div>
        </nav>
+       </div>
     )
 } 

@@ -13,19 +13,18 @@ import Login from './components/customer/login/login.component';
 function App() {
   return (
     <div className="App">
-      
+        
         <Routes>
           <Route index element={<User/>} />
           <Route exact path="user/*" element={<User/>}>
-            {/* <Route exact path="" element={<Home/>}></Route>
-            <Route exact path="home" element={<Home/>}></Route>
-            <Route exact path="profile" element={<Profile/>}></Route> */}
           </Route>
           <Route exact path='manager/*' element={<Manager/>} />
          
 
           <Route path="/login" exact element={<Login/>} />
           <Route  path="/signup" exact element={<SignUp/>} />
+          <Route  path="/admin" exact element={<AdminSidebar/>} />
+          <Route  path="/admin/staffmanage" exact element={<StaffManage/>} />
         </Routes>
     </div>
   );

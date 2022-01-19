@@ -6,7 +6,7 @@ import { Form } from 'react-bootstrap';
 export default class VIPRegister extends Component {
     render(){
         return (
-            <div className="outer">
+            <div className="outer1">
                 <div className="inner1">
                     <Container>                        
                         <Row>

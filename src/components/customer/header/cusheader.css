@@ -1,18 +1,18 @@
-.logo{
+.header1 .logo{
   padding: 10px 10px;
   border-radius: 20px;
 }
-.nav-link{
+.header1 .nav-link{
   width: 100px;
   text-align: center;
 }
-.nav-link.active{
+.header1 .nav-link.active{
   background-color: rgb(76, 214, 238);
-  border-radius: 10px;
+  border-radius: 15px;
   font-weight: bolder;
 }
 /* Nút Dropdown*/
-.nut_dropdown {
+.header1 .nut_dropdown {
     background-color: #0080ff;
     color: white;
     padding: 10px;
