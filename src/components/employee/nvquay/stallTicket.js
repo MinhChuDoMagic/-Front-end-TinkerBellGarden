@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import "./stallTicket.css"
+
 import {Button, Form, Row, Col} from "react-bootstrap"
 const calculatePrice = () => {
     return 100000;
@@ -41,10 +41,10 @@ function StallTicket() {
                             <Form.Label>Số lượng</Form.Label>
                             <Form.Control type="number" defaultValue="1" min="1"/>
                         </Form.Group>
-                        <Form.Group>
+                        {/* <Form.Group>
                             <Form.Label>Mã giảm giá</Form.Label>
                             <Form.Control placeholder="vd. 2021DDD"/>
-                        </Form.Group>
+                        </Form.Group> */}
                         <hr/>
                         <p>Giá tiền thanh toán: {calculatePrice()}vnđ</p>
                         <Button onClick={() => setShowForm(!showForm)}>Xác nhận</Button>

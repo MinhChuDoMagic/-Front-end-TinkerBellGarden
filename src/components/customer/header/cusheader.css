@@ -66,9 +66,8 @@
   .noidung_dropdown.hienThi {display:block;}
 
   .home_login{
-    
     padding: 5px 10px;
-    width: 100px;
+    width: 120px;
     margin-right: 10px;
     background-color: white; 
     color: black; 
@@ -81,7 +80,7 @@
   }
   .home_signup{
     padding: 5px 10px;
-    width: 100px;
+    width: 120px;
     margin-right: 10px;
     background-color: white; 
     color: black; 

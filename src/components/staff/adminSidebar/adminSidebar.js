@@ -38,10 +38,11 @@ const AdminSidebar = () => {
 
             <SidebarFooter>
               <Menu iconShape="square">
-              <MenuItem>Đăng xuất</MenuItem>
+              <MenuItem>
+                Đăng xuất
+              </MenuItem>
               </Menu>
             </SidebarFooter>
-            
           </ProSidebar>
                
         );

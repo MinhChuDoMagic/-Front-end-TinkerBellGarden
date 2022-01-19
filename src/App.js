@@ -5,10 +5,11 @@ import { Routes,Route } from "react-router-dom";
 
 import User from './webpage/User'
 import Manager from './webpage/Manager'
-// import Staff from './webpage/Staff'
+import Staff from './webpage/Staff'
 // import Receptionist from './webpage/Receptionist'
 import SignUp from './components/customer/signup/signup.component';
 import Login from './components/customer/login/login.component';
+
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
         
         <Routes>
           <Route index element={<User/>} />
-          <Route exact path="user/*" element={<User/>}>
-          </Route>
+          <Route exact path="user/*" element={<User/>}></Route>
           <Route exact path='manager/*' element={<Manager/>} />
+          <Route exact path="staff/*" element={<Staff/>}></Route>
          
 
           <Route path="/login" exact element={<Login/>} />
