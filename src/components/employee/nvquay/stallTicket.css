@@ -1,0 +1,8 @@
+.stallTicket {
+    min-height: 400px;
+    margin: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    padding-left: 50px;
+    width: 80%;
+}

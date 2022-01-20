@@ -20,8 +20,8 @@ const AdminSidebar = () => {
                   <Link to="xemdoanhthu" />  
                 </MenuItem>
                 <SubMenu title="Quản lý khu vui chơi" >
-                  <MenuItem>Component 1</MenuItem>
-                  <MenuItem>Component 2</MenuItem>
+                  <MenuItem>Cơ sở vật chất<Link to="facilities" /></MenuItem>
+                  <MenuItem>Dịch vụ<Link to="services" /></MenuItem>
                 </SubMenu>
                 <SubMenu title="Quản lý sự kiện" >
                   <MenuItem>Danh sách sự kiện <Link to="quanlysk" /></MenuItem>

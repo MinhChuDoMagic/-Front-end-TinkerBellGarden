@@ -9,6 +9,8 @@ import AddStaff from '../components/staff/staffManage/addStaff'
 import ChangeStaff from '../components/staff/staffManage/changeStaff'
 import ChangeEvent from '../components/staff/eventManage/changeEvent'
 import EventManage from '../components/staff/eventManage/eventManage'
+import Facilities from '../components/staff/khuvuichoi/facilities'
+import Services from '../components/staff/khuvuichoi/services'
 import './manager.css'
 
 export default function Manager() {
@@ -24,6 +26,8 @@ export default function Manager() {
                 <Route exact path="/themsk" element={<AddEvent/>}></Route>
                 <Route exact path="/suask" element={<ChangeEvent/>}></Route>
                 <Route exact path="/quanlysk" element={<EventManage/>}></Route>
+                <Route exact path="/facilities" element={<Facilities/>}></Route>
+                <Route exact path="/services" element={<Services/>}></Route>
             </Routes>
         </div>
         <Footer/>
