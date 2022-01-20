@@ -7,9 +7,6 @@ body {
   display: flex;
   font-weight: 400;
   font-family: sans-serif;
-  background: #12c2e9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
 
@@ -28,6 +25,15 @@ body, html, .App, #root, .outer {
   justify-content: center;
   flex-direction: column;
   text-align: left;
+}
+
+.outer1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .inner {
@@ -130,3 +136,35 @@ body, html, .App, #root, .outer {
 .forgot-password a {
   color: #167bff;
 }
+
+.eventList .ev {
+  border-radius: 15px;
+  
+}
+
+.eventList{
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+}
+
+.eventList .img {
+  border-radius: 15px 15px 0px 0px;
+
+}
+
+.eventList .av {
+  height: 80vh;
+}
+
+
+.db {
+  position: relative;
+  width: 100%;
+  padding: 25px 50px 25px 50px;  
+}
+
+
+

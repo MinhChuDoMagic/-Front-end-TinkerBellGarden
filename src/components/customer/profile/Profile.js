@@ -2,6 +2,7 @@
 import React, {  useState } from 'react';
 import './Profile.css';
 import image from './nobi.jpg'
+import { useNavigate } from 'react-router-dom';
 
 export default function Profile() {
     const [info, setInfo] = useState({
@@ -13,7 +14,18 @@ export default function Profile() {
         VIPdate: '15/06/2001'
     });
     const [edit, setEdit] = useState(false);
+
+    let navi=useNavigate();
+
+    const handleUpdate=()=>{
+        //callapi
+        setEdit(false);
+    }
     
+    const logout = ()=>{
+        localStorage.removeItem("isLogin");
+        navi("/user/home");
+    }
     
     return (
         <div className='prof_ctn'>
@@ -25,19 +37,19 @@ export default function Profile() {
                     </div>
                     <div className='line'>
                     <div className='label'>
-                        <p>Họ:</p>
+                        <p>Họ</p>
                     </div>
                     <input value={info.firstName} onChange={e=>{setInfo({...info,firstName: e.target.value});setEdit(true)}}/>
                     </div>
                     <div className='line'>
                     <div className='label'>
-                        <p>Tên:</p>
+                        <p>Tên</p>
                     </div>
                     <input value={info.lastName} onChange={e=>{setInfo({...info,lastName: e.target.value});setEdit(true)}}/>
                     </div>
                     <div className='line'>
                     <div className='label'>
-                        <p>Số điện thoại:</p>
+                        <p>Số điện thoại</p>
                     </div>
                     <input value={info.phoneNumber} onChange={e=>{setInfo({...info,phoneNumber: e.target.value});setEdit(true)}}/>
                     </div>
@@ -48,12 +60,11 @@ export default function Profile() {
                     <input value={info.email} onChange={e=>{setInfo({...info,email: e.target.value});setEdit(true)}}/>
                     </div>
                     <div className={`bt${edit?'':' hide'}`}>
-                        <button type='submit' onClick={()=>{setEdit(false)}}>Cập nhật</button>
+                        <button type='submit' onClick={()=>handleUpdate()}>Cập nhật</button>
                     </div>
-                    <p>Xu: {info.bonus}</p>
                     <div className='vip'>
                         <p>VIP: {info.VIPdate}</p>
-                        <a href="##">Gia hạn</a>
+                        <a href="/user/VIPregister">Gia hạn</a>
                     </div>
                 </div>
                 <div className='ticket'>
@@ -73,7 +84,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='logout'>
-                <button>Thoát</button>
+                <button onClick={()=>logout()}>Đăng xuất</button>
             </div>  
         </div>
     )
